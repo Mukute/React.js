@@ -3,14 +3,15 @@ import ReactDom from "react-dom";
 
 const firstName = "Yonel";
 const lastName = "Mukute";
-const year = 2020;
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 ReactDom.render(
   <div>
     <p>
       Created by {firstName} {lastName}
     </p>
-    <p>Copyright {year}. </p>
+    <p>Copyright {year} </p>
   </div>,
   document.getElementById("root")
 );
